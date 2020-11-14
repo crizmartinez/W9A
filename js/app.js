@@ -15,5 +15,9 @@ else if(age < 18 && is_subscribed == true) {
     console.log(" the user is younger than 18 and is subcribed");
 }
 
-else(age > 18 && is_subscribed == true) 
-    console.log(" the user is older than 18 and is subscribed")
+else{
+    console.log(" the user is older than 18 and is subscribed"
+} 
+   
+
+
