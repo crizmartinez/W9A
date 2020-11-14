@@ -1,23 +1,35 @@
-var age = prompt("Type your age");
-var is_subscribed = confirm("are you subscribed?");
 
+var age = [
+    5, 
+    10, 
+    15,
+    20,
+    25,
+    30,
+    35,
+];
+var is_subscribed = [
+    "true",
+    "false",
+    "true",
+    "false",
+    "true",
+    "false",
+    "true",
+];
 
-// 4 scenarios
-// the user is younger than 18 and not subscribed
-if(age < 18 && is_subscribed == false) {
-    console.log(" the user is younger than 18 and not subscribed");
+for(var i = 0; i < 7; i++) {
+
+if(age[i] < 18 && is_subscribed[i] == "false") {
+    console.log("the user is younger than 18 and not subscribed");
 }
-else if(age > 18 && is_subscribed == false) {
-    console.log(" the user is older than 18 and not subscribed");
+else if(age[i] > 18 && is_subscribed[i] == "false") {
+    console.log("the user is older than 18 and not subscribed");
 }
-// the user is younger than 18 and is subscribed
-else if(age < 18 && is_subscribed == true) {
-    console.log(" the user is younger than 18 and is subcribed");
+else if(age[i] < 18 && is_subscribed[i] == "true") {
+    console.log("the user is younger than 18 and is subcribed");
 }
-
-else{
-    console.log(" the user is older than 18 and is subscribed"
-} 
-   
-
-
+else {
+    console.log("the user is older than 18 and is subscribed"); 
+}
+}
